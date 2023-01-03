@@ -465,6 +465,7 @@ footer {
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
 }
 .btn-footer {
     font-family: Roboto;
@@ -653,7 +654,6 @@ footer {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity:1;
-    
 }
 .button-modal {
     width: 24px;
@@ -685,20 +685,14 @@ footer {
 .modal-form {
     padding: 72px 24px 24px 24px;
 }
-.registration {
-    
-
-}
 .registration-paragraph{
-    font-family: 'Roboto';
-    font-style: normal;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-
 }
 .registration-form {
     position: relative;
@@ -706,7 +700,6 @@ footer {
     flex-direction: column;
 }
 .registration-name{
-    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -721,9 +714,7 @@ footer {
     padding-left: 34px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 .registration-form-imput:focus {
    outline: 1px solid rgba(77, 90, 229, 1);
@@ -741,9 +732,7 @@ footer {
     height: 24px;
     padding: 5px 2px 6px 3px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
-
 .text-input {
     height: 120px;
     padding: 8px 0px 0px 16px;
@@ -755,37 +744,59 @@ footer {
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: rgba(117, 117, 117, 0.5);
     margin-bottom: 16px;
 }
 .registration-form-imput:focus ~ .registration-form-icon{
     fill: #404BBF;
 }
 /*Checkbox*/
-.registration-form-agreement {
-    padding: 16px 0px 24px 0px;
-}
-.registration-form-policy {
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    border: 1.25px solid #2E2F42;
-    border-radius: 2px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-}
-.registration-form-text {
-    font-weight: 400;
+.check {
+    display: flex;
+    padding-left: 1.2em;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.04em;
     color: #757575;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    gap: 2px;
+    margin-bottom: 24px;
 }
-.icon-checkbox {
-    display: inline-block;
+.check-input {
+    position: absolute;
+    appearance: none;
 }
-.registration-form-agreement:checked + .icon-checkbox {
-    background-color: #4D5AE5;
+.check-box {
+    position: absolute;
+    width: 16px;
+    height:16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    background-image: url(/icons/off.checkbox.svg);
+    background-color: #FFFFFF;
+    margin-left: -1.2em;
+}
+.check-text {
+    margin-left: 8px;
+}
+.check-input:checked + .check-box  {
+    background-image: url(/icons/checkbox.svg);
+    background-color:  #404BBF;;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 4px solid #404BBF;
+    border-radius: 2px;
+}
+.modal-policy {
+    font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.04em;
+text-decoration-line: underline;
+color: #4D5AE5;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+.button-send {
+    position: absolute;
+    left: 119px;
 }
