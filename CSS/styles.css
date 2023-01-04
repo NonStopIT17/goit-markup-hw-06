@@ -382,6 +382,7 @@ footer {
 .footer-div-one {
     margin-right: 120px;
     margin-left: 0;
+    padding: 0;
 }
 .footer-logo {
     color: #F4F4FD;
@@ -398,7 +399,8 @@ footer {
     letter-spacing: 0.02em;
     margin-bottom: 0;
     font-weight: 400;
-    max-width: 264px;
+    width: 264px;
+    height: 110px;
     margin-top: 16px;
 }
 /*Second info*/
@@ -411,6 +413,7 @@ footer {
     margin-left: 0;
     margin-right: 80px;
     margin-bottom: 0;
+    padding: 0;
 }
 .social-media-footer {
     color:#FFFFFF;
@@ -448,6 +451,7 @@ footer {
 .footer-div-three {
     margin-left: 0;
     margin-right: 0;
+    padding: 0;
 }
 .footer-form-div {
     display: flex;
@@ -700,14 +704,12 @@ footer {
     flex-direction: column;
 }
 .registration-name{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #8E8F99;
-    padding: 8px 0px 4px 0px;
+    padding: 8px 1px 4px 1px;
 }
 .registration-form-imput {
     height: 40px;
